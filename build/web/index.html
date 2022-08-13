@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SIMULADOR DE BRASILEIRAO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+
+                background-image: url('estadio.jpg');
+                background-repeat: no-repeat;
+                background-size:125%;
+                bottom: 0;
+                color: black;
+                left: 0;
+                overflow: auto;
+                padding: 0em;
+                position: absolute;
+                right: 0;
+                text-align: center;
+                top: 0;
+
+            }
+            #imagem{
+                position : relative;
+                left: 0%;
+                background-repeat: no-repeat;
+                background-size:100%;
+                height: 100%;
+                width: 100%;
+                top:0;
+                opacity: 1;
+            }
+            h1{
+                background-color: white;
+                color:darkblue;
+                font-family: verdana;
+                font-size: 300%;
+                border: 1px solid black;
+                margin: 10px;
+                margin-right: 500px;
+                margin-left: 500px;
+                margin-bottom: 15px;
+                left: 3%;
+                position: absolute;
+            }
+
+            table{
+                background-color: white;
+                position: absolute;
+                left: 3%;
+                font-family: Arial;
+                font-size: 1em;
+                border: 0px solid black;
+                text-align: center;
+                border-collapse: collapse;
+                width: 30em;
+                box-shadow: 1px 1px 10px 10px black;
+
+            }
+            #c{
+                background-color: pink;
+            }
+            #L{
+                background-color: #90ee90;
+                border: 1pxss;
+            }
+            #pl{
+                background-color: #add8e6;
+            }
+            #s{
+                background-color: #FFD700; 
+            }
+            #r{
+                background-color: #FF6347;
+            }
+            td{
+                padding: 10px; 
+            }
+
+            #normal{
+                background-color: white;
+            }
+            #L,#pl,#normal,#r,#c,#s{
+                font-family: impact;
+                padding: 0.3em 1em;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            th {
+                background-color: brown;
+                color: white;
+                font-family: Arial;
+            }
+            div{
+                position: absolute;
+                background-color: #2A4F27;
+                left: 70%;
+                bottom: 50%;
+                padding: 100px;
+                box-shadow: 10px 10px 100px 10px black; 
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SIMULADOR BRASILEIRÃO</h1>
+        <table border='0' >
+            <tr id='c'>
+                <th></th>
+                <th>Times</th>
+                <th>Pontos</th>
+                <th>Jogos</th>
+                <th>Vitorias</th>
+
+            </tr>
+            <tr >
+                <td id='L'>1º</td>
+                <td>Athletico-PR</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id='L'>2º</td>
+                <td>Atlético-MG</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>   
+                <td id='L'>3º</td>
+                <td>Avaí </td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id='L'>4º</td>
+                <td>Bahia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id='pl'>5º</td>
+                <td>Botafogo</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr >
+                <td id='pl'>6º</td>
+                <td>CSA</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id='s'>7º</td>
+                <td>Ceará</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id='s'>8º</td>
+                <td> Chapecoense</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='s'>9º</td>
+                <td> Corinthians</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='s'>10º</td>
+                <td> Cruzeiro</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='s'>11º</td>
+                <td>Flamengo</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='s'>12º</td>
+                <td> Fluminense</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr >
+                <td id='normal'>13º</td>
+                <td>Fortaleza</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='normal'>14º</td>
+                <td>Goias</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='normal'>15º</td>
+                <td>Grêmio</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='normal'>16º</td>
+                <td> Internacional</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='r'>17º</td>
+                <td> Palmeiras</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='r'>18º</td>
+                <td> Santos</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='r'>19º</td>
+                <td> São Paulo</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+            <tr>
+                <td id='r'>20º</td>
+                <td> Vasco</td> 
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>    
+
+        </table>
+        <div>
+            <h3>Para simular as partidas pressione o botão</h3>
+            <!-- <input type="submit" value="SIMULAR" name="processar" /> -->
+            <form action="Processo" method="POST ">
+                Parametro:
+                <input type="text" name="parametroEnviadoParaServlet"/>
+                <br/>
+                <input type="submit" value="Iniciar"/>
+            </form>    
+            <!--<form action="processo">
+                Nome.:<input type="text" name="nome" />
+                <br/>
+                <input type="submit" value="Enviar" />
+            </form>-->
+        </div>
+
+    </body>
+</html>
